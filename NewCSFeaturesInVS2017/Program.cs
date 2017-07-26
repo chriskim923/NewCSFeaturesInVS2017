@@ -20,7 +20,6 @@ namespace NewCSFeaturesInVS2017
             bool isValidAge = int.TryParse(ageText, out int age);
 
             Console.WriteLine($"Your age is { age }.");
-            Console.ReadKey();
 
             //// Feature #2: Pattern Matching
             // Pattern Matching is testing a variable to determine its type and taking different actions
@@ -28,8 +27,8 @@ namespace NewCSFeaturesInVS2017
             string ageFromConsole = "21";
             int ageFromDatabase = 84;
 
-            // Type ageVal = ageFromConsole and ageVal = ageFromDatabase
             object ageVal = ageFromConsole;
+            //object ageVal = ageFromDatabase;
 
             /* If statement: (Is ageVal an int? If true, then assign the new age variable as the value.) OR...
             [(Is ageVal a string? If true, then assign the new ageText variable as the ageVal value) AND...
@@ -43,7 +42,6 @@ namespace NewCSFeaturesInVS2017
             {
                 Console.WriteLine("We do not know your age.");
             }
-            Console.ReadKey();
 
             //// Feature #3: Powerful Switch Statements
             /* Switch statements used to be limited to numeric types and the string type. Those restrictions have been
@@ -77,7 +75,6 @@ namespace NewCSFeaturesInVS2017
                         break;
                 }
             }
-            Console.ReadKey();
 
             //// Feature #4: Throw in expression (in-line)
             // Removes the need for clunky error handles like: 
